@@ -9,7 +9,7 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 const evenNumbers = () => {
   for (let i = 0; i < 3; i += 1) {
-    const randomNum = Math.floor(Math.random() * 100) + 1;
+    const randomNum = Math.floor(Math.random() * 50) + 1;
     console.log(`Question: ${randomNum} `);
     const userAnswer = readlineSync.question('Your answer: ');
     if ((randomNum % 2 === 0 && userAnswer === 'yes') || (randomNum % 2 !== 0 && userAnswer === 'no')) {
